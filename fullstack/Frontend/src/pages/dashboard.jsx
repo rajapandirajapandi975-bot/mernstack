@@ -4,9 +4,11 @@ function Dashboard() {
   const [count, setCount] = useState(0)
   const location=useLocation()
   const [userdata,setUserdata]=useState("");
+
   function displaydata(){
     setUserdata(location.state);
-    console.log(userdata)
+    //console.log(userdata)
+    console.log(location.state)
   }
   return (
     <>
